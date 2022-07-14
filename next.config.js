@@ -1,10 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  Images: {
-    domains: ["miro.medium.com"],
+module.exports = {
+  images: {
+    domains: ["www.google.com"],
   },
 };
-
-module.exports = nextConfig;
