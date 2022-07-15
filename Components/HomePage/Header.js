@@ -1,6 +1,6 @@
 import { ViewGridIcon } from "@heroicons/react/solid";
-import Avatar from "./Avatar";
-import profile from "../images/profile.jpg";
+import Avatar from "../Avatar";
+import profile from "../../images/profile.jpg";
 
 function Header() {
   return (
