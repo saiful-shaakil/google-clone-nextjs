@@ -1,19 +1,23 @@
 import Head from "next/head";
 import Avatar from "../Components/Avatar";
 import profile from "../images/profile.jpg";
-import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
+import {
+  GlobeIcon,
+  MicrophoneIcon,
+  ViewGridIcon,
+} from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 import Image from "next/Image";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col items-center h-screen">
       <Head>
         <title>Google</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Header */}
-      <header className="flex justify-between w-full p-5 text-sm text-gray-700">
+      <header className="flex justify-between w-full px-8 py-5 text-sm text-gray-700">
         {/* left header*/}
         <div className="flex space-x-4 items-center">
           <p className="link">About</p>
@@ -30,7 +34,7 @@ export default function Home() {
         </div>
       </header>
       {/* Body */}
-      <form className="flex flex-col items-center justify-center h-[80vh]">
+      <form className="flex flex-col items-center justify-center w-4/5 flex-grow">
         <Image
           src={
             "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
@@ -55,6 +59,27 @@ export default function Home() {
         </div>
       </form>
       {/* Footer */}
+      <footer className="grid w-full divide-y-[1px] divide-gray-300 bg-gray-100 text-sm text-gray-500">
+        <div className="px-8 py-3">
+          <p>Bangladesh</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 px-8 py-3 grid-flow-row-dense">
+          <div className="flex justify-center items-center md:col-span-2 lg:col-span-1 lg:col-start-2">
+            <GlobeIcon className="h-5 mr-1 text-green-700" /> Carbon neutral
+            since 2007
+          </div>
+          <div className="flex justify-center space-x-8 whitespace-nowrap md:justify-self-start">
+            <p>Advertise</p>
+            <p>Business</p>
+            <p>How search works</p>
+          </div>
+          <div className="flex justify-center space-x-8 md:ml-auto">
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>Setting</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
