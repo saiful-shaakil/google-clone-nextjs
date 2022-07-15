@@ -17,7 +17,7 @@ function Header() {
         {/* Icon */}
         <ViewGridIcon className="h-10 w-10 transition hover:bg-gray-100 rounded-full cursor-pointer p-1" />
         {/* Avatar */}
-        <Avatar url={profile} />
+        <Avatar url="https://miro.medium.com/max/1050/1*lyyXmbeoK5JiIBNCnzzjjg.png" />
       </div>
     </header>
   );
