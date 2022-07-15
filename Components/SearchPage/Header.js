@@ -54,8 +54,6 @@ function Heade() {
 
       {/* Header Options */}
       <HeaderOptions />
-
-      {/* Search Results */}
     </header>
   );
 }
