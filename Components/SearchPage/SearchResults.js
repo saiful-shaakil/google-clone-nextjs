@@ -1,5 +1,6 @@
+import PaginationButtons from "./PaginationButtons";
+
 function SearchResults({ results }) {
-  console.log(results);
   return (
     <div className="mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52">
       <p className="text-gray-600 text-md mb-5 mt-3">
@@ -22,6 +23,7 @@ function SearchResults({ results }) {
           <p className="line-clamp-2">{result.snippet}</p>
         </div>
       ))}
+      <PaginationButtons />
     </div>
   );
 }
