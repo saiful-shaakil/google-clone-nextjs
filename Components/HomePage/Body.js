@@ -10,7 +10,7 @@ function Body() {
     e.preventDefault();
     const searchInput = formSearchRef.current.value;
     if (!searchInput) return;
-    router.push(`/search?term=${searchInput}`);
+    router.push(`/search?term=${searchInput}&start=0`);
   };
   return (
     <form className="flex flex-col items-center justify-center w-4/5 flex-grow">
