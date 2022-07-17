@@ -29,7 +29,7 @@ export async function getServerSideProps(context) {
   const data = useDummyText
     ? Response
     : await fetch(
-        `https://www.googleapis.com/customsearch/v1?key=&cx=9867c733a42c0c643&q=${context.query.term}`
+        `https://www.googleapis.com/customsearch/v1?key=AIzaSyCiUjE0xHq0mQxyKfNqSAQFQKOa55Gtd1g&cx=9867c733a42c0c643&q=${context.query.term}`
       ).then((res) => res.json());
   return {
     props: {
