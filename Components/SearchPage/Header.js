@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import Avatar from "../Avatar";
-import profile from "../../images/profile.jpg";
 import HeaderOptions from "./HeaderOptions";
 function Heade() {
   const router = useRouter();
