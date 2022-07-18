@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 import Avatar from "../Avatar";
+import profile from "../../images/openPeeps.svg";
 import HeaderOptions from "./HeaderOptions";
 function Heade() {
   const router = useRouter();
@@ -45,10 +46,7 @@ function Heade() {
           </button>
         </form>
         {/* Avatar */}
-        <Avatar
-          className="ml-auto"
-          url="https://miro.medium.com/max/1050/1*lyyXmbeoK5JiIBNCnzzjjg.png"
-        />
+        <Avatar className="ml-auto" url={profile} />
       </div>
 
       {/* Header Options */}

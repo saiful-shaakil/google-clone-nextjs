@@ -1,6 +1,6 @@
 import { ViewGridIcon } from "@heroicons/react/solid";
 import Avatar from "../Avatar";
-import profile from "../../images/profile.jpg";
+import profile from "../../images/openPeeps.svg";
 
 function Header() {
   return (
@@ -17,7 +17,7 @@ function Header() {
         {/* Icon */}
         <ViewGridIcon className="h-10 w-10 transition hover:bg-gray-100 rounded-full cursor-pointer p-1" />
         {/* Avatar */}
-        <Avatar url="https://miro.medium.com/max/1050/1*lyyXmbeoK5JiIBNCnzzjjg.png" />
+        <Avatar url={profile} />
       </div>
     </header>
   );
